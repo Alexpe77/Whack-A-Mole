@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: wheat;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+body .board {
+  width: 800px;
+  height: 700px;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+body .board a:hover {
+  cursor: url("hammer.jpg"), grabbing;
+}
+body .board div {
+  width: 150px;
+  height: 150px;
+  border: 2px groove black;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+  background-color: red;
+}
+body p {
+  border: 2px solid black;
+}/*# sourceMappingURL=style.css.map */
