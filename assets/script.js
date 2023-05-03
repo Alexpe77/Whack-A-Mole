@@ -8,14 +8,12 @@ let time = 10;
 let currentPos;
 
 // Check if a mole is there and update the score if it is
-holes.forEach(hole => {
-    hole.addEventListener('click', () => {
-        if (parseInt(hole.getAttribute('id')) === currentPos) {
-            score++;
-            scoreElement.innerHTML = score;
+    document.addEventListener('click', (e) => {
+        if (e.target.classList.contains("mole")){
+            document.getElementById('score').innerText = score;
+            score += 10;
         }
-    })
-});
+        });
 
 // Add eventlistener to the start button
 startBtn.addEventListener('click', start);
