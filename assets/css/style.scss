@@ -11,6 +11,10 @@ body {
     height: 100%;
     background-color: wheat;
     font-family: Verdana, Tahoma, sans-serif;
+        .title {
+            width: 800px;
+            text-align: center;
+        }
         .board {
             width: 800px;
             height: 700px;
@@ -20,22 +24,51 @@ body {
             grid-template-rows: repeat(3, 1fr);
             grid-column-gap: 0px;
             grid-row-gap: 0px;
-            a {
-                &:hover {
-                    cursor: url("hammer.jpg"), grabbing;
-                }
-            }
+            overflow: hidden;
             div {
                 width: 150px;
                 height: 150px;
-                border: 2px groove black;
+                border: 2px solid black;
                 border-radius: 50%;
                 justify-self: center;
                 align-self: center;
-                background-color: red;
             }
         }
-        p {
-            border: 2px solid black;
+        .score-board {
+            width: 800px;
+                border: 2px solid black;
+                text-align: center;
+                font-size: 25px;
+            #start {
+                align-content: center;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+                font-weight: 700;
+                padding: 5px;
+                border-radius: 10px;
+                    &:hover {
+                        background-color: lightgreen;
+                    }
+            }   
         }
-}       
+}
+
+.mole {
+    width: 150px;
+    height: 150px;
+    background-image: url('./assets/mole.jpg');
+    background-size: contain;
+    animation: appear 0.9s;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(130px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
