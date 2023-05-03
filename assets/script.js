@@ -10,7 +10,7 @@ let currentPos;
 // Check if a mole is there and update the score if it is
 holes.forEach(hole => {
     hole.addEventListener('click', () => {
-        if (parseInt(hole.getAttribute('id'))=== currentPos) {
+        if (parseInt(hole.getAttribute('id')) === currentPos) {
             score++;
             scoreElement.innerHTML = score;
         }
@@ -39,7 +39,7 @@ function start() {
         if (time === 0) {
             clearInterval(startGame); // Stop the loop
             setTimeout (() => {
-            alert('Congratulations, all the Digletts are gone !');
+            alert('Congratulations, you caught all the Digletts !');
             }, 100);
         }
     }, 1000);
