@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: wheat;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+body .title {
+  width: 800px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+body .board {
+  width: 800px;
+  height: 700px;
+  border: 3px solid black;
+  border-radius: 14px 14px 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-image: url("/assets/grass.jpg");
+}
+body .board .hole {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+  background-color: green;
+  cursor: url("/assets/pokeball.png"), pointer;
+  overflow: hidden;
+}
+body .score-board {
+  width: 800px;
+  border: 2px solid black;
+  border-radius: 0 0 14px 14px;
+  text-align: center;
+  font-size: 25px;
+}
+body .score-board #start {
+  display: inline-block;
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .score-board #start:hover {
+  background-color: lightgreen;
+}
+
+.mole {
+  width: 150px;
+  height: 150px;
+  background-image: url("/assets/taupiqueur.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: appear 0.5s;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(120px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */
