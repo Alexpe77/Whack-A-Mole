@@ -39,7 +39,7 @@ function start() {
         if (time === 0) {
             clearInterval(startGame); // Stop the loop
             setTimeout (() => {
-            alert('Congratulations, all the moles are gone !');
+            alert('Congratulations, all the Digletts are gone !');
             }, 100);
         }
     }, 1000);
