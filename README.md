@@ -6,7 +6,7 @@ Every second a new "mole" appears and you'll have to click on it to gently tell 
 
 ## Technology used
 
-For this project I used time outs and intervals so it's mainly JavaScript here. </br>
+For this project I used time outs and intervals so there's JavaScript. </br>
 But I also used HTML and SCSS.
 
 ## Screen shot
